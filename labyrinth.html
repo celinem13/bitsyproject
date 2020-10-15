@@ -39,7 +39,32 @@ ROOM 0
 0,a,a,a,a,a,a,a,a,a,a,a,a,a,a,0
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 NAME example room
-ITM 0 7,10
+EXT 2,4 1 7,8 FX tunnel
+PAL 0
+
+ROOM 1
+0,0,0,0,0,0,0,a,0,a,0,0,0,0,0,0
+0,0,0,0,0,0,0,a,0,a,0,0,0,0,0,0
+0,0,0,0,0,0,0,a,0,a,0,0,0,0,0,0
+0,0,0,a,a,a,a,a,0,a,a,a,a,0,0,0
+0,0,0,a,0,0,0,0,0,0,0,0,a,0,0,0
+0,0,0,a,0,0,0,0,0,0,0,0,a,0,0,0
+0,0,0,a,0,0,0,0,0,0,0,0,a,0,0,0
+a,a,a,a,0,0,0,0,0,0,0,0,a,a,a,a
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+a,a,a,a,0,0,0,0,0,0,0,0,a,a,a,a
+0,0,0,a,0,0,0,0,0,0,0,0,a,0,0,0
+0,0,0,a,0,0,0,0,0,0,0,0,a,0,0,0
+0,0,0,a,0,0,0,0,0,0,0,0,a,0,0,0
+0,0,0,a,a,a,a,a,0,a,a,a,a,0,0,0
+0,0,0,0,0,0,0,a,0,a,0,0,0,0,0,0
+0,0,0,0,0,0,0,a,0,a,0,0,0,0,0,0
+NAME Endless Maze Room
+ITM 0 8,8
+EXT 15,8 1 1,8 FX slide_r
+EXT 8,15 1 8,1 FX slide_d
+EXT 8,0 1 8,14 FX slide_u
+EXT 0,8 1 14,8 FX slide_l
 PAL 0
 
 TIL a
@@ -60,7 +85,7 @@ SPR A
 00011000
 00111100
 01111110
-10111101
+10100101
 00100100
 00100100
 >
@@ -94,7 +119,16 @@ SPR a
 00100100
 NAME cat
 DLG 0
-POS 0 13,13
+
+SPR b
+11111111
+10000001
+10000001
+10000001
+10000001
+10000001
+10000001
+10000001
 
 ITM 0
 00000000
@@ -114,7 +148,7 @@ ITM 0
 01111100
 01111100
 00111110
-NAME tea
+NAME map
 DLG 1
 
 ITM 1
@@ -134,7 +168,14 @@ I'm a cat
 NAME cat dialog
 
 DLG 1
-You found a nice warm cup of tea
+"""
+Theseus,
+
+Leave your Divine Rage Dormant. Return and Rescue Us. 
+Remember, Daydaus's Labyrinth can be Unraveled.
+
+- Ariadne
+"""
 NAME tea dialog
 
 DLG 2
@@ -9071,6 +9112,7 @@ CHAR 255
 010010
 000000
 000000
+</script>
 </script>
 
 </head>

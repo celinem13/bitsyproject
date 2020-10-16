@@ -47,24 +47,43 @@ ROOM 1
 0,0,0,0,0,0,0,a,0,a,0,0,0,0,0,0
 0,0,0,0,0,0,0,a,0,a,0,0,0,0,0,0
 0,0,0,a,a,a,a,a,0,a,a,a,a,0,0,0
-0,0,0,a,0,0,0,0,0,0,0,0,a,0,0,0
+0,0,0,a,b,b,b,b,0,b,b,b,a,0,0,0
 0,0,0,a,0,0,0,0,0,0,0,0,a,0,0,0
 0,0,0,a,0,0,0,0,0,0,0,0,a,0,0,0
 a,a,a,a,0,0,0,0,0,0,0,0,a,a,a,a
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+b,b,b,b,0,0,0,0,0,0,0,0,b,b,b,b
 a,a,a,a,0,0,0,0,0,0,0,0,a,a,a,a
-0,0,0,a,0,0,0,0,0,0,0,0,a,0,0,0
+b,b,b,a,0,0,0,0,0,0,0,0,a,b,b,b
 0,0,0,a,0,0,0,0,0,0,0,0,a,0,0,0
 0,0,0,a,0,0,0,0,0,0,0,0,a,0,0,0
 0,0,0,a,a,a,a,a,0,a,a,a,a,0,0,0
-0,0,0,0,0,0,0,a,0,a,0,0,0,0,0,0
+0,0,0,b,b,b,b,a,0,a,b,b,b,0,0,0
 0,0,0,0,0,0,0,a,0,a,0,0,0,0,0,0
 NAME Endless Maze Room
-ITM 0 8,8
-EXT 15,8 1 1,8 FX slide_r
-EXT 8,15 1 8,1 FX slide_d
-EXT 8,0 1 8,14 FX slide_u
-EXT 0,8 1 14,8 FX slide_l
+EXT 15,8 1 1,8 FX slide_r DLG 3
+EXT 8,15 1 8,1 FX slide_d DLG 6
+EXT 8,0 1 8,14 FX slide_u DLG 7
+EXT 0,8 1 14,8 FX slide_l DLG 8
+PAL 0
+
+ROOM 2
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
+a,0,0,0,0,0,0,0,0,0,0,0,0,0,0,a
+a,a,a,a,a,a,a,a,a,a,a,a,a,a,a,a
+NAME next room
 PAL 0
 
 TIL a
@@ -78,6 +97,17 @@ TIL a
 10111101
 NAME block
 WAL true
+
+TIL b
+10101010
+10101010
+10101010
+10101010
+10101010
+10101010
+00000000
+00000000
+NAME wall
 
 SPR A
 00011000
@@ -99,73 +129,47 @@ SPR A
 00100100
 POS 0 2,2
 
-SPR a
-00000000
-00000000
-01010001
-01110001
-01110010
+SPR b
+00111110
 01111100
-00111100
-00100100
+01000100
+01111100
+01000100
+01111100
+01111100
+00111110
 >
 00000000
-00000000
-01010100
-01110010
-01110010
+00111110
+01000100
 01111100
-00111100
-00100100
-NAME cat
-DLG 0
-
-SPR b
-11111111
-10000001
-10000001
-10000001
-10000001
-10000001
-10000001
-10000001
+01000100
+01111100
+00111110
+00000000
+DLG 9
+POS 1 7,7
 
 ITM 0
 00000000
-00111110
-01000100
-01111100
-01000100
-01111100
-00111110
+00000000
+00000000
+00000000
+00000000
+00000000
+00000000
 00000000
 >
-00111110
-01111100
-01000100
-01111100
-01000100
-01111100
-01111100
-00111110
-NAME map
-DLG 1
-
-ITM 1
 00000000
-00111100
-00100100
-00111100
-00010000
-00011000
-00010000
-00011000
-NAME key
-DLG 2
-
-DLG 0
-I'm a cat
-NAME cat dialog
+00000000
+00000000
+00001000
+00000000
+00000000
+00000000
+00000000
+NAME blank
+DLG 1
 
 DLG 1
 """
@@ -178,12 +182,101 @@ Remember, Daydaus's Labyrinth can be Unraveled.
 """
 NAME tea dialog
 
-DLG 2
-A key! {wvy}What does it open?{wvy}
-NAME key dialog
+DLG 3
+"""
+{
+  - door == 2 ?
+    {door = door + 1}
+  - door == 4 ?
+    {door = door + 1}
+  - door == 5 ?
+    {door = door + 1}
+  - door == 7 ?
+    {door = door + 1}
+  - else ?
+    {door = 0}
+    {shuffle
+      - Is this the right way?
+      - This doesn't feel right.
+      - This way smells weird.
+      - Hmm...
+    }
+}
+"""
+NAME right door
 
-VAR a
-42
+DLG 6
+"""
+{
+  - door == 1 ?
+    {door = door + 1}
+  - door == 3 ?
+    {door = door + 1}
+  - door == 8 ?
+    {door = door + 1}
+  - else ?
+    {door = 0}
+    {shuffle
+      - Is this the right way?
+      - This doesn't feel right.
+      - This way smells weird.
+      - Hmm...
+    }
+}
+"""
+NAME down door
+
+DLG 7
+"""
+{
+  - door == 6 ?
+    {door = door + 1}
+  - door == 10 ?
+    {exit "2" 8 7 "fade_b"}
+  - else ?
+    {door = 0}
+    {shuffle
+      - Is this the right way?
+      - This doesn't feel right.
+      - This way smells weird.
+      - Hmm...
+    }
+}
+"""
+NAME up door
+
+DLG 8
+"""
+{
+  - door == 0 ?
+    {door = door + 1}
+  - door == 9 ?
+    {door = door + 1}
+  - else ?
+    {door = 0}
+    {shuffle
+      - Is this the right way?
+      - This doesn't feel right.
+      - This way smells weird.
+      - Hmm...
+    }
+}
+"""
+NAME left door
+
+DLG 9
+"""
+Theseus,
+
+Leave your Divine Rage Dormant. Return and Rescue Us. 
+Remember, Daydaus's Labyrinth can be Unraveled.
+
+- Ariadne
+"""
+NAME sprite b dialog
+
+VAR door
+0
 
 
 </script>
@@ -9112,7 +9205,6 @@ CHAR 255
 010010
 000000
 000000
-</script>
 </script>
 
 </head>
